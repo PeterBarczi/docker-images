@@ -1,0 +1,15 @@
+body {
+  background-color: lightblue;
+}
+
+h1 b {
+    font-size: 2em;
+} */
+
+footer {
+    margin-top: auto !important;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    height: 50px;
+}
