@@ -1,0 +1,4 @@
+#!/bin/bash
+docker rm -f my_rocky_1
+docker rmi petyb/rocky:1
+docker run -dit --name my_rocky_1 -p 8001:80 petyb/rocky:1
