@@ -11,13 +11,10 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push Image I.
       run: |
-        ls -la
         echo "${{ secrets.DOCKERHUBPW }}" | docker login -u petyb --password-stdin
+        echo "Building Image 1"
         docker image build -t petyb/rocky:1 -f Dockerfile.1 .
         docker push petyb/rocky:1
-    - name: Build & Push Image II.
-      run: |
-        ls -la
-        echo "${{ secrets.DOCKERHUBPW }}" | docker login -u petyb --password-stdin
+        echo "Building Image 2"
         docker image build -t petyb/rocky:2 -f Dockerfile.2 .
         docker push petyb/rocky:2
