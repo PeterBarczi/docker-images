@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    - name: Build & Push Image I.
+    - name: Build & Push Images
       run: |
         echo "${{ secrets.DOCKERHUBPW }}" | docker login -u petyb --password-stdin
         echo "Building Image 1"
