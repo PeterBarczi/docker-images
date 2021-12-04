@@ -27,7 +27,7 @@ ADD nginx.conf.template /etc/nginx/conf.d/nginx.conf
 ADD index.html /usr/share/nginx/html/index.html
 
 ADD images/rocky.$part.jpg usr/share/nginx/html/images/rocky.$part.jpg
-ADD css/rambo.$part.css usr/share/nginx/html/css/rocky.$part.css
+ADD css/rocky.$part.css usr/share/nginx/html/css/rocky.$part.css
 
 RUN sed -e "s/{{TITLE}}/${title}/g" \
         -e "s/{{YEAR}}/${year}/g" \
