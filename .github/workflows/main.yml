@@ -22,5 +22,5 @@ jobs:
         docker image build -t petyb/rocky:3 -f Dockerfile.3 .
         docker push petyb/rocky:3
         echo "Building Image 4"
-        docker image build -t petyb/rocky:latest -f Dockerfile.4 .
+        docker image build -t petyb/rocky:4 -t petyb/rocky:latest -f Dockerfile.4 .
         docker push petyb/rocky:latest
