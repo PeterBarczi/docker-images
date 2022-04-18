@@ -28,6 +28,7 @@ ADD index.html /usr/share/nginx/html/index.html
 
 ADD images/rocky.$part.jpg usr/share/nginx/html/images/rocky.$part.jpg
 ADD css/rocky.$part.css usr/share/nginx/html/css/rocky.$part.css
+ADD images/favicon.png usr/share/nginx/html/images/favicon.png
 
 RUN sed -e "s/{{TITLE}}/${title}/g" \
         -e "s/{{YEAR}}/${year}/g" \
